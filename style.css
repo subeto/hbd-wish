@@ -1,0 +1,59 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: block;
+  overflow-x: hidden;
+}
+iframe {
+  height: 80%;
+  width: 100%;
+}
+div {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+}
+/* style="position: absolute; width:0; height:0; border:0;" */
+.hide {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 0;
+}
+.msg {
+  background-image: url("happybday/img2.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: auto;
+}
+/* From Uiverse.io by mrhyddenn */ 
+.shadow__btn {
+  display: block;
+  margin: 80px auto 0;
+  padding: 10px 20px;
+  border: none;
+  font-size: 17px;
+  color: #fff;
+  border-radius: 7px;
+  letter-spacing: 4px;
+  font-weight: 700;
+  text-transform: uppercase;
+  transition: 0.5s;
+  transition-property: box-shadow;
+  z-index: 5;
+}
+
+.shadow__btn {
+  background: rgb(0,140,255);
+  box-shadow: 0 0 25px rgb(0,140,255);
+}
+
+.shadow__btn:hover {
+  box-shadow: 0 0 5px rgb(0,140,255),
+              0 0 25px rgb(0,140,255),
+              0 0 50px rgb(0,140,255),
+              0 0 100px rgb(0,140,255);
+}
