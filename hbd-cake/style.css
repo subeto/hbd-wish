@@ -1,15 +1,15 @@
 body {
+  min-height: 100vh;
   display: flex;
-  height:100vh;
   align-items: center;
   justify-content: center;
-  background-color: #18a6f8;
+  /* background-color: #18a6f8; */
   overflow: hidden;
 }
 
 #birthday-cake {
   position: relative;
-  top:50px;
+  top:100px;
   left:0;
 }
 
@@ -112,6 +112,7 @@ body {
   top:-160px;
   left:-20px;
   box-shadow: 50px 20px #FFB6C1, -50px 20px #FFB6C1;
+
 }
 
 .candles:before {
@@ -223,9 +224,9 @@ body {
   text-align: center;
 }
 .text {
-  width:900px;
-  font-size: 50px;
-  left:-435px;
+  width:1440px;
+  font-size: 25px;
+  left:-700px;
   top:100px;
   z-index:-1;
   transition: .5s;
@@ -237,4 +238,6 @@ body {
   width: 300px;
   top:105px;
   left:-140px;
+  margin-top: 200px;
+
 }

@@ -17,6 +17,9 @@ div {
   margin: 0;
 }
 /* style="position: absolute; width:0; height:0; border:0;" */
+.hidden {
+  display: none;
+}
 .hide {
   position: absolute;
   width: 0;
@@ -28,6 +31,15 @@ div {
   background-repeat: no-repeat;
   background-size: cover;
   overflow: auto;
+}
+.cake {
+  background-image: url(hbd-cake/decor.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #18a6f8;
+}
+.cake-name {
+  margin-top: 140px;
 }
 /* From Uiverse.io by mrhyddenn */ 
 .shadow__btn {

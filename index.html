@@ -13,21 +13,26 @@
   </script>
 </head>
 <body>
-  <audio autoplay="autoplay" height="100" width="100" id="myAudio">
+  <audio autoplay="autoplay preload" height="100" width="100" id="myAudio">
     <source src="aud.mp3" type="audio/mp3" />
-    <embed height="100" width="100" src="aud.mp3" />
+    <!-- <embed height="100" width="100" src="aud.mp3" /> -->
   </audio>
   <div class="msg" id="msgs">
     <iframe src="happybday/index.html" frameborder="0"></iframe>
-    <button class="shadow__btn" onclick="change()">Cake!</button>
+    <button class="hidden" id="cake-btn" onclick="change()">Cake Here!</button>
   </div>
   <div class="cake hide" id="cakec">
-    <iframe src="hbd-cake/index.html" frameborder="0"></iframe>
+    <iframe class="cake-name" src="hbd-cake/index.html" frameborder="0"></iframe>
   </div>
   <script>
+    setTimeout(showBtn, 25000);
+
+    function showBtn() {
+      document.getElementById("cake-btn").classList.add('shadow__btn');
+      document.getElementById("cake-btn").classList.remove('hidden');
+    };
     function change() {
       document.getElementById("msgs").classList.add('hide');
-
       document.getElementById("cakec").classList.remove('hide');
     };
   </script>
